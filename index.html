@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>رينبو وينجز | Rainbow Wings - استشارات ومتابعة مربي طيور الزينة</title>
+    <!-- أيقونة تبويب المتصفح باستخدام الشعار الرسمي -->
+    <link rel="icon" type="image/png" href="٢٠٢٦١٠٢٤_١٧٣٦٥٩.png">
+
+    <!-- استدعاء خطوط Google Fonts العربية (Cairo للعناوين و Tajawal للنصوص) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Tajawal:wght@400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- =========================================================================
+         تنسيقات CSS التقليدية النقية (Pure Vanilla CSS)
+         ملاحظة لقتيبة: يمكنك نسخ كل ما بداخل وسم <style> إلى ملف style.css خارجي لاحقاً
+         ========================================================================= -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================================================
+         1. شريط التنقل العلوي (Navbar)
+         ========================================================================= -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="brand">
+                <div class="brand-logo">
+                    <img src="imajes/the_logo.png" alt="شعار Rainbow Wings" onerror="handleLogoError(this)">
+                </div>
+                <div class="brand-text">
+                    <h1>رينبو وينجز</h1>
+                    <span>RAINBOW WINGS</span>
+                </div>
+            </a>
+
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">الرئيسية</a>
+                <a href="#services">خدماتنا</a>
+                <a href="#packages">الباقات والأسعار</a>
+                <a href="#report-sample">نموذج التقرير</a>
+                <a href="#founder">من نحن</a>
+                <a href="#reviews">تقييمات وآراء المربين</a>
+                <a href="#booking">احجز استشارتك</a>
+                <a href="#faq">الأسئلة الشائعة</a>
+            </nav>
+
+            <a href="#booking" class="btn btn-gold nav-cta">اشترك الآن</a>
+
+            <button class="mobile-toggle" id="mobileToggle" aria-label="القائمة">☰</button>
+        </div>
+    </header>
+
+    <!-- =========================================================================
+         2. قسم الواجهة الرئيسية (Hero Section)
+         ========================================================================= -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <div class="hero-badge">🦜 إشراف ميداني واستشارات متخصصة للمربين</div>
+                <h2 class="hero-title">
+                    ارتقِ بمستوى إنتاجك وحافظ على صحة طيورك مع <span>Rainbow Wings</span>
+                </h2>
+                <p class="hero-desc">
+                    نقدم لمربي طيور الزينة والهواة متابعة دورية احترافية، برامج تغذية ووقاية مدروسة، استشارات وراثة
+                    وتركيب أزواج، وزيارات ميدانية للتشييك الشامل على الأقفاص والطيور لتجنب الخسائر وتحقيق أقوى إنتاج.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="#packages" class="btn btn-primary">استكشف الباقات والأسعار</a>
+                    <a href="#booking" class="btn btn-outline">تواصل معنا عبر واتساب 💬</a>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <h4>+8 سنوات</h4>
+                        <p>خبرة ميدانية في التربية</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>متابعة</h4>
+                        <p>أونلاين وزيارات ميدانية</p>
+                    </div>
+                    <div class="stat-item">
+                        <h4>تقارير</h4>
+                        <p>فحص شاملة وتوصيات</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="logo-showcase">
+                    <div class="logo-showcase-img">
+                        <img src="imajes/the_logo.png" alt="شعار رينبو وينجز" onerror="handleLogoError(this)">
+                    </div>
+                    <h3>RAINBOW WINGS</h3>
+                    <p class="tagline">إدارة الإنتاج • الوراثة والطفرات • الرعاية الصحية</p>
+                    <div class="showcase-tags">
+                        <span>بادجي رينبو</span>
+                        <span>طيور الزينة</span>
+                        <span>برامج تغذية</span>
+                        <span>تشييك ميداني</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         3. قسم الخدمات (Services Section)
+         ========================================================================= -->
+    <section id="services" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">حلول متكاملة للمربين</span>
+                <h2 class="section-title">خدماتنا الاستشارية والميدانية</h2>
+                <p class="section-subtitle">صممنا خدماتنا لتلبي احتياج المربي المبتدئ والمحترف، وتحمي استثمارك في الطيور
+                    من الأخطاء الشائعة.</p>
+            </div>
+
+            <div class="services-grid">
+                <!-- الخدمة 1 -->
+                <div class="service-card">
+                    <div class="service-icon">📱</div>
+                    <h3>المتابعة عن بُعد (أونلاين)</h3>
+                    <p>متابعة مستمرة لحالة طيورك عبر الواتساب من خلال فحص الفيديوهات والصور والتدخل السريع عند ظهور أي
+                        أعراض.</p>
+                    <ul class="service-list">
+                        <li>تقييم الحالة الصحية والإخراج</li>
+                        <li>متابعة الحالات الطارئة خطوة بخطوة</li>
+                        <li>توجيهات يومية وأسبوعية للمربي</li>
+                    </ul>
+                </div>
+
+                <!-- الخدمة 2 -->
+                <div class="service-card">
+                    <div class="service-icon">🩺</div>
+                    <h3>الزيارات الميدانية الشاملة</h3>
+                    <p>نزول ميداني لمقر التربية أو المطير لفحص الأقفاص، التهوية، الإضاءة، ومعاينة الطيور على أرض الواقع.
+                    </p>
+                    <ul class="service-list">
+                        <li>تشييك كامل على بيئة التربية والنظافة</li>
+                        <li>فحص الطيور ظاهرياً وتقييم جاهزيتها</li>
+                        <li>تسليم تقرير مكتوب بالتوصيات الفورية</li>
+                    </ul>
+                </div>
+
+                <!-- الخدمة 3 -->
+                <div class="service-card">
+                    <div class="service-icon">🌿</div>
+                    <h3>برامج التغذية والوقاية</h3>
+                    <p>تصميم جداول غذائية متوازنة ومكملات فيتامينات وأملاح تناسب كل مرحلة (تجهيز، إنتاج، قَلش، راحة).
+                    </p>
+                    <ul class="service-list">
+                        <li>تنظيم خلطات الحبوب والمنقوع</li>
+                        <li>رفع مناعة القطيع وتقليل النفوق</li>
+                    </ul>
+                </div>
+
+                <!-- الخدمة 4 -->
+                <div class="service-card">
+                    <div class="service-icon">🧬</div>
+                    <h3>تأسيس الإنتاج والطفرات</h3>
+                    <p>تخطيط غرف التربية وتركيب الأزواج بناءً على أسس الوراثة لتحسين الحجم والألوان وإنتاج طفرات قوية.
+                    </p>
+                    <ul class="service-list">
+                        <li>تنسيق تركيبات الأزواج (البادجي)</li>
+                        <li>تنظيم سجلات الإنتاج والترقيم</li>
+                        <li>نصائح اختيار السلالات الخالية من العيوب</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         4. قسم الباقات والأسعار (Pricing Section)
+         ملاحظة لقتيبة: يمكنك تعديل الأسعار والمميزات أدناه بكل سهولة
+         ========================================================================= -->
+    <section id="packages" class="section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">خطط اشتراك مرنة ومنافسة</span>
+                <h2 class="section-title">اختر الباقة المناسبة لطيورك</h2>
+                <p class="section-subtitle">قيمة الاشتراك الشهري أقل بكثير من خسارة طير واحد. اضغط على "اشترك الآن" ليتم
+                    تحديد الباقة تلقائياً في نموذج الحجز.</p>
+            </div>
+
+            <!-- شريط عرض التخفيض لأول المشتركين -->
+            <div class="discount">
+                <div class="promo-offer-banner">
+                    <span class="promo-badge">🔥 عرض لفترة محدودة</span>
+                    <p class="promo-text">
+                        خصم خاص وحصري لأول المشتركين بنسبة 25%! يبدأ العرض من تاريخ
+                        <strong class="promo-date">1 ديسمبر</strong> وحتى
+                        <strong class="promo-date">10 ديسمبر</strong>
+                    </p>
+                </div>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- الباقة 1 -->
+                <div class="price-card">
+                    <div>
+                        <span class="plan-type">متابعة أونلاين</span>
+                        <h3 class="plan-name">الباقة الأساسية</h3>
+                        <p class="plan-desc">مناسبة للهواة والمبتدئين (حتى 5 أزواج)</p>
+                        <div class="plan-price">
+                            <span class="amount">5,000</span>
+                            <span class="period">ريال / شهرياً</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">✓</span> متابعة أسبوعية عبر الواتساب</li>
+                            <li><span class="check">✓</span> جدول تغذية أساسي حسب الموسم</li>
+                            <li><span class="check">✓</span> تقييم 5 استفسارات/حالات شهرياً</li>
+                            <li><span class="check">✓</span> نصائح تأسيس الأقفاص والنظافة</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-outline"
+                        onclick="selectPackage('الباقة الأساسية (5,000 ريال/شهرياً)')">اشترك الآن</button>
+                </div>
+
+                <!-- الباقة 2 (مميزة) -->
+                <div class="price-card featured">
+                    <span class="popular-tag">الأكثر طلباً 🔥</span>
+                    <div>
+                        <span class="plan-type">أونلاين مكثف</span>
+                        <h3 class="plan-name">باقة الإنتاج المتقدم</h3>
+                        <p class="plan-desc">للمربين المنتجين وغرف التربية المتوسطة</p>
+                        <div class="plan-price">
+                            <span class="amount">10,000</span>
+                            <span class="period">ريال / شهرياً</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">✓</span> متابعة لصيقة وأولوية الرد السريع</li>
+                            <li><span class="check">✓</span> برنامج فيتامينات ووقاية احترافي</li>
+                            <li><span class="check">✓</span> استشارات تركيب الأزواج والطفرات</li>
+                            <li><span class="check">✓</span> متابعة الفروخ والفطام خطوة بخطوة</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-gold"
+                        onclick="selectPackage('باقة الإنتاج المتقدم (10,000 ريال/شهرياً)')">اشترك الآن</button>
+                </div>
+
+                <!-- الباقة 3 -->
+                <div class="price-card">
+                    <div>
+                        <span class="plan-type">زيارة ميدانية</span>
+                        <h3 class="plan-name">الزيارة الميدانية الفردية</h3>
+                        <p class="plan-desc">تشييك شامل على الموقع والطيور لمرة واحدة</p>
+                        <div class="plan-price">
+                            <span class="amount">12,000</span>
+                            <span class="period">ريال / للزيارة</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">✓</span> نزول ميداني لمقر التربية (داخل المدينة)</li>
+                            <li><span class="check">✓</span> فحص الأقفاص، التهوية، والإضاءة</li>
+                            <li><span class="check">✓</span> معاينة الطيور وتحديد أي مشاكل صحية</li>
+                            <li><span class="check">✓</span> تسليم تقرير مكتوب بخطة العمل</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-outline"
+                        onclick="selectPackage('الزيارة الميدانية الفردية (12,000 ريال)')">اشترك الآن</button>
+                </div>
+
+                <!-- الباقة 4 -->
+                <div class="price-card">
+                    <div>
+                        <span class="plan-type">شاملة VIP</span>
+                        <h3 class="plan-name">المتابعة الميدانية الشاملة</h3>
+                        <p class="plan-desc">للمزارع وغرف الإنتاج الكبيرة</p>
+                        <div class="plan-price">
+                            <span class="amount">25,000</span>
+                            <span class="period">ريال / شهرياً</span>
+                        </div>
+                        <ul class="plan-features">
+                            <li><span class="check">✓</span> زيارتان ميدانيتان شهرياً للموقع</li>
+                            <li><span class="check">✓</span> خط مفتوح للمتابعة اليومية عبر واتساب</li>
+                            <li><span class="check">✓</span> إشراف كامل على التغذية والأدوية</li>
+                            <li><span class="check">✓</span> تقارير تقييم دورية لتطور القطيع</li>
+                        </ul>
+                    </div>
+                    <button type="button" class="btn btn-primary"
+                        onclick="selectPackage('باقة المتابعة الميدانية الشاملة VIP (25,000 ريال/شهرياً)')">اشترك
+                        الآن</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         4.5. قسم معاينة نموذج التقرير الميداني (Field Report Sample Preview)
+         ========================================================================= -->
+    <section id="report-sample" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">الشفافية والاحترافية في العمل</span>
+                <h2 class="section-title">معاينة حية لنموذج التقرير الميداني</h2>
+                <p class="section-subtitle">هذا نموذج توضيحي للتقرير الفني المكتوب الذي يستلمه المربي بعد كل زيارة
+                    ميدانية، لتوثيق حالة الأقفاص والطيور وخطة التحسين.</p>
+            </div>
+
+            <div class="report-paper">
+                <span class="report-watermark">نموذج معاينة توضيحي</span>
+
+                <!-- ترويسة التقرير -->
+                <div class="report-header">
+                    <div class="report-brand">
+                        <img src="imajes/the_logo.png" alt="شعار Rainbow Wings" onerror="handleLogoError(this)">
+                        <div>
+                            <h3>تقرير الفحص والتقييم الميداني</h3>
+                            <span>مؤسسة رينبو وينجز | Rainbow Wings للإشراف والاستشارات</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- بيانات الزيارة -->
+                <div class="report-meta-grid">
+                    <div class="meta-item">
+                        <span>اسم المربي (العميل):</span>
+                        <strong>أبو عبدالله (نموذج تجريبي)</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>نوع الطيور المستهدفة:</span>
+                        <strong>بادجي رينبو + طيور حب (18 زوج)</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>تاريخ الزيارة الميدانية:</span>
+                        <strong>14 نوفمبر 2026</strong>
+                    </div>
+                    <div class="meta-item">
+                        <span>المشرف والخبير الميداني:</span>
+                        <strong>قتيبة الدبعي</strong>
+                    </div>
+                </div>
+
+                <!-- 1. جدول تقييم البيئة والأقفاص -->
+                <div class="report-block">
+                    <h4 class="report-block-title">1. تقييم بيئة التربية والأقفاص</h4>
+                    <div class="table-responsive">
+                        <table class="audit-table">
+                            <thead>
+                                <tr>
+                                    <th>عنصر الفحص</th>
+                                    <th>التقييم</th>
+                                    <th>الملاحظات والتوجيهات الميدانية</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><strong>التهوية وتجديد الهواء</strong></td>
+                                    <td><span class="status-pill status-warn">🟡 يحتاج تعديل</span></td>
+                                    <td>يوجد تيار هوائي مباشر على الصف العلوي للأقفاص؛ يُنصح بتركيب حاجز جزئي.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>الإضاءة الطبيعية والصناعية</strong></td>
+                                    <td><span class="status-pill status-good">🟢 ممتاز</span></td>
+                                    <td>توزيع الإضاءة متوازن ومدة السطوع (12 ساعة) مثالية لموسم الإنتاج.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>نظافة الأقفاص والبياضات</strong></td>
+                                    <td><span class="status-pill status-good">🟢 ممتاز</span></td>
+                                    <td>الأرضيات والمشارب نظيفة؛ يُوصى بتعقيم البياضات قبل تركيب العش القادم.</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>كثافة الطيور (التزاحم)</strong></td>
+                                    <td><span class="status-pill status-warn">🟡 مقبول</span></td>
+                                    <td>مطار الفروخ يحتاج لتقليل العدد بمقدار 4 طيور لتفادي الإجهاد.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 2. تقييم الحالة الصحية والتغذية -->
+                <div class="report-two-cols">
+                    <div class="report-subcard">
+                        <h4 class="report-block-title">2. تقييم الحالة الصحية العامة</h4>
+                        <ul>
+                            <li><strong>النشاط والحيوية:</strong> حركة القطيع نشطة واستجابة ممتازة للمحيط.</li>
+                            <li><strong>الريش والجلد:</strong> لمعان طبيعي للريش مع خلو القطيع من الفاش الخارجي.</li>
+                            <li><strong>ملاحظة فردية:</strong> الأنثى في القفص رقم (4) لديها تشحيم بسيط وتحتاج لنظام
+                                غذائي مخفف قبل التزاوج.</li>
+                        </ul>
+                    </div>
+
+                    <div class="report-subcard">
+                        <h4 class="report-block-title">3. مراجعة التغذية والمكملات</h4>
+                        <ul>
+                            <li><strong>خلطة الحبوب:</strong> نظيفة وخالية من الرطوبة، يُنصح بزيادة نسبة الفلارس شتاءً.
+                            </li>
+                            <li><strong>الفيتامينات والأملاح:</strong> انتظام جيد في تقديم الكالسيوم السائل وعظم الحبار.
+                            </li>
+                            <li><strong>المياه:</strong> تُبدل يومياً؛ يُفضل إضافة خل التفاح الطبيعي مرة أسبوعياً.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 3. خطة العمل والتوصيات -->
+                <div class="action-plan-box">
+                    <h4 class="report-block-title">4. خطة العمل والتوصيات الفورية (خلال 48 ساعة)</h4>
+                    <ol>
+                        <li>تعديل اتجاه فتحة التهوية لتجنب التيار البارد المباشر على أقفاص الإنتاج.</li>
+                        <li>عزل الأنثى رقم (4) في مطير واسع لمدة 10 أيام مع تقديم خلطة حبوب خفيفة لإنقاص الوزن.</li>
+                        <li>البدء بكورس التجهيز (فيتامين E + سيلينيوم) للأزواج الجاهزة لمدة 5 أيام متتالية.</li>
+                    </ol>
+                </div>
+
+                <!-- 4. الخلاصة وتوقيع الخبير -->
+                <div class="expert-verdict">
+                    <p>"ما شاء الله تبارك الله، القطيع يمتلك سلالات قوية ومقومات إنتاجية ممتازة. تطبيق التعديلات البسيطة
+                        أعلاه سيرفع نسبة التخصيب وحيوية الفروخ بشكل ملحوظ بإذن الله."</p>
+                    <div class="expert-signature">
+                        <strong>قتيبة الدبعي</strong>
+                        <span>المشرف العام - Rainbow Wings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         5. قسم التعريف بالمؤسس (About Founder - قتيبة الدبعي)
+         ملاحظة لقتيبة: يمكنك تعديل النص التعريفي أدناه بما يناسبك لاحقاً
+         ========================================================================= -->
+    <section id="founder" class="section">
+        <div class="container">
+            <div class="founder-box">
+                <div class="founder-profile">
+                    <div class="founder-avatar">
+                        <img src="imajes/founder-img.jpg" alt="قتيبة الدبعي - مؤسس Rainbow Wings"
+                            onerror="handleLogoError(this)">
+                    </div>
+                    <span class="founder-role">مؤسس المشروع والمشرف العام</span>
+                    <h3>قتيبة الدبعي</h3>
+                </div>
+
+                <div class="founder-content">
+                    <h2>من أنا؟ ولماذا أطلقت Rainbow Wings؟</h2>
+                    <p>
+                        مرحباً بكم، أنا <strong>قتيبة الدبعي</strong>، مربي طيور زينة وباحث عملي في إدارة الإنتاج وعلوم
+                        الوراثة والطفرات (وبالأخص طيور البادجي الرينبو) بدأت رحلتي مع هذه الهواية الجميلة منذ أكثر من 8
+                        سنوات .. عشت فيها تفاصيل كثيرة، من شغف البدايات البسيطة، إلى التحديات، وصولاً إلى متعة الإنتاج
+                        وتطوير مستويات الطيور بفضل الله.
+                    </p>
+                    <p>
+                        خلال سنوات عملي في تربية وإنتاج الطيور، لاحظت أن الكثير من المربين يتكبدون خسائر كبيرة في الطيور
+                        والفروخ بسبب نصائح غير دقيقة أو أخطاء بسيطة في التهوية والتغذية وتنسيق الأزواج. لذلك أطلقت
+                        <strong>رينبو وينجز (Rainbow Wings)</strong> لأكون شريكاً عملياً للمربي، أضع بين يديه خلاصة
+                        التجربة الميدانية والعلمية لضمان صحة طيوره واستمرارية إنتاجه.
+                    </p>
+
+                    <div class="founder-highlights">
+                        <div class="highlight-pill">
+                            <strong>🧬 الوراثة والطفرات</strong>
+                            <span>تأسيس خطوط إنتاج قوية وتنسيق تركيبات الرينبو</span>
+                        </div>
+                        <div class="highlight-pill">
+                            <strong>🌿 إدارة التغذية</strong>
+                            <span>برامج وقائية ومكملات دقيقة لكل موسم</span>
+                        </div>
+                        <div class="highlight-pill">
+                            <strong>📋 الإشراف الميداني</strong>
+                            <span>فحص المطاير والأقفاص وتقديم حلول عملية</span>
+                        </div>
+                    </div>
+
+                    <p>
+                        ملاحظة: جميع النصائح و الملاحظات والخدمات المقدمة عبر Rainbow Wings تستند إلى الخبرة العملية و
+                        الممارسات الميدانية في تربية وإنتاج طيور الزينة،
+                        وليست بديلاً عن الإستشارة البيطرية المتخصصة؛ فأنا لست طبيباً بيطرياً، ولكنني أبذل جهدي دائماً
+                        لمشاركة ما اكتسبته من خبرات لخدمة المربين.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم التقييمات وآراء المربين -->
+    <section id="reviews" class="reviews-section">
+        <div class="reviews-header">
+            <h2>تقييمات وآراء المربين</h2>
+            <p>تجارب المربين الذين استفادوا من خدمات المتابعة والاستشارة في Rainbow Wings</p>
+        </div>
+
+        <div class="reviews-container">
+            <!-- نموذج إضافة تقييم جديد -->
+            <div class="review-form-card">
+                <h3>أضف تقييمك وتجربتك</h3>
+                <form id="reviewForm">
+                    <div class="form-group">
+                        <label>تقييمك للخدمة *</label>
+                        <div class="star-rating-input" id="starRating">
+                            <span data-value="5" class="selected">★</span>
+                            <span data-value="4" class="selected">★</span>
+                            <span data-value="3" class="selected">★</span>
+                            <span data-value="2" class="selected">★</span>
+                            <span data-value="1" class="selected">★</span>
+                        </div>
+                        <input type="hidden" id="ratingValue" value="5" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewerName">اسم المربي / الكنية *</label>
+                        <input type="text" id="reviewerName" placeholder="مثال: أبو عبدالله" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewerBirds">نوع الطيور أو الباقة (اختياري)</label>
+                        <input type="text" id="reviewerBirds" placeholder="مثال: مربي بادجي رينبو - زيارة ميدانية" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="reviewComment">تعليقك وتجربتك *</label>
+                        <textarea id="reviewComment" rows="3" placeholder="اكتب رأيك في الاستشارة أو المتابعة..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit-review">نشر التقييم الآن</button>
+                </form>
+            </div>
+
+            <!-- عرض التقييمات -->
+            <div class="reviews-list" id="reviewsList">
+                <!-- تقييمات افتراضية أولية -->
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <div class="reviewer-info">
+                            <strong>أبو مازن</strong>
+                            <span>مربي بادجي رينبو • زيارة ميدانية</span>
+                        </div>
+                        <div class="review-stars-display">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        ما شاء الله تبارك الله، الزيارة الميدانية فرقت معي كثير في ترتيب التهوية وجدول التغذية، والتقرير
+                        المكتوب كان واضح ومرتب جداً. أنصح أي مربي بالتعامل معه.
+                    </p>
+                </div>
+
+                <div class="review-card">
+                    <div class="review-card-top">
+                        <div class="reviewer-info">
+                            <strong>صالح اليافعي</strong>
+                            <span>مربي كوكتيل وروز • متابعة عن بُعد</span>
+                        </div>
+                        <div class="review-stars-display">★★★★★</div>
+                    </div>
+                    <p class="review-text">
+                        متابعة دقيقة وسرعة في الرد على أي استفسار، بفضل الله ثم نصائحه تحسن إنتاج الموسم عندي بشكل ملحوظ
+                        وتجنبت خسائر كثيرة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================================
+         6. قسم نموذج الحجز والتواصل المباشر (Booking & Contact Section)
+         ========================================================================= -->
+    <section id="booking" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">ابدأ رحلة الاحتراف الآن</span>
+                <h2 class="section-title">اطلب اشتراكك أو احجز استشارتك</h2>
+                <p class="section-subtitle">املأ البيانات التالية وسنقوم بتحويلك مباشرة إلى تطبيق الواتساب برسالة منسقة
+                    وجاهزة لتأكيد طلبك.</p>
+            </div>
+
+            <div class="booking-wrapper">
+                <form id="bookingForm">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="breederName">اسم المربي / الكنية *</label>
+                            <input type="text" id="breederName" class="form-control" required
+                                placeholder="مثال: أبو محمد">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="breederCity">المدينة / المنطقة *</label>
+                            <input type="text" id="breederCity" class="form-control" required
+                                placeholder="مثال: صنعاء - حدة">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="birdType">نوع الطيور وعدد الأزواج التقريبي *</label>
+                            <input type="text" id="birdType" class="form-control" required
+                                placeholder="مثال: 15 زوج بادجي رينبو + 4 كوكتيل">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="packageSelect">الباقة المختارة *</label>
+                            <select id="packageSelect" class="form-control" required>
+                                <option value="الباقة الأساسية (5,000 ريال/شهرياً)">الباقة الأساسية (5,000 ريال/شهرياً)
+                                </option>
+                                <option value="باقة الإنتاج المتقدم (10,000 ريال/شهرياً)" selected>باقة الإنتاج المتقدم
+                                    (10,000 ريال/شهرياً)</option>
+                                <option value="الزيارة الميدانية الفردية (12,000 ريال)">الزيارة الميدانية الفردية
+                                    (12,000 ريال)</option>
+                                <option value="باقة المتابعة الميدانية الشاملة VIP (25,000 ريال/شهرياً)">باقة المتابعة
+                                    الميدانية الشاملة VIP (25,000 ريال/شهرياً)</option>
+                                <option value="استفسار مخصص / باقة خاصة">استفسار مخصص / باقة خاصة</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group full-width">
+                            <label for="breederNotes">ملاحظات إضافية أو مشاكل حالية تود التركيز عليها (اختياري)</label>
+                            <textarea id="breederNotes" class="form-control"
+                                placeholder="اكتب أي تفاصيل عن وضع الإنتاج، التغذية، أو حالات صحية..."></textarea>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-whatsapp">
+                        <span>إرسال الطلب عبر الواتساب مباشرة</span>
+                        <span>📲</span>
+                    </button>
+
+                    <div id="formStatus" class="form-status">
+                        تم تجهيز رسالة اشتراكك بنجاح! جاري فتح تطبيق الواتساب...
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم الأسئلة الشائعة -->
+    <section id="faq" class="faq-section">
+        <div class="faq-header">
+            <h2>الأسئلة الشائعة</h2>
+            <p>إجابات واضحة لأكثر الاستفسارات التي تهم مربي طيور الزينة حول خدماتنا</p>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span>ما الفرق بين المتابعة عن بُعد والزيارة الميدانية؟</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    المتابعة عن بُعد تتم عبر الواتساب من خلال فحص الصور والفيديوهات، وتقديم برامج التغذية والوقاية والرد
+                    على استفساراتك اليومية. أما الزيارة الميدانية فنحضر فيها شخصياً لموقع التربية لمعاينة التهوية،
+                    الإضاءة، نظافة الأقفاص، وفحص الطيور عن قرب مع تسليم تقرير مكتوب بالحلول.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span>هل الخدمة مخصصة لمربي البادجي الرينبو فقط أم لجميع الطيور؟</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    نقدم استشاراتنا وبرامج الرعاية لجميع أنواع طيور الزينة (البادجي بأنواعه وطفراته، الكوكتيل، الروز
+                    والفيشر، الكناري، الزيبرا، والببغاوات المتوسطة والكبيرة)، مع خبرة متخصصة وتفصيلية في تأسيس وإنتاج
+                    خطوط البادجي الرينبو.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span>هل تقدمون تشخيصاً بيطرياً أو عمليات جراحية للطيور؟</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    خدمتنا تركز على الإدارة الاحترافية للتربية، التغذية السليمة، الوقاية، تحسين بيئة الأقفاص، والتعامل
+                    الميداني مع الحالات الشائعة التي يواجهها المربون بناءً على الخبرة العملية. وفي الحالات المرضية
+                    المعقدة أو الجراحية نوجهك فوراً لأقرب طبيب بيطري مختص.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span>كيف يتم تفعيل الاشتراك بعد إرسال الطلب من الموقع؟</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    بمجرد تعبئة بياناتك في نموذج الحجز أعلاه، سيتم تحويلك تلقائياً إلى محادثة الواتساب برسالة منسقة،
+                    لنتفق معك على آلية الدفع وتحديد موعد بدء المتابعة أو جدول الزيارة الميدانية في نفس اليوم.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" type="button">
+                    <span>أمتلك عدداً قليلاً من الأزواج في المنزل، هل تناسبني الخدمة؟</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    بالتأكيد! الباقة الأساسية صُممت خصيصاً للهواة وأصحاب الأقفاص المنزلية المحدودة لتجنب أخطاء البدايات،
+                    وضمان صحة طيورك ونجاح إنتاجها بأقل تكلفة ممكنة.
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =========================================================================
+         7. تذييل الصفحة (Footer)
+         ========================================================================= -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="#home" class="brand">
+                    <div class="brand-logo">
+                        <img src="imajes/the_logo.png" alt="شعار Rainbow Wings" onerror="handleLogoError(this)">
+                    </div>
+                    <div class="brand-text">
+                        <h1>رينبو وينجز | Rainbow Wings</h1>
+                        <span>تصميم/ م: قتيبة الدبعي</span>
+                    </div>
+                </a>
+
+                <div class="footer-links">
+                    <a href="#home">الرئيسية</a>
+                    <a href="#services">خدماتنا</a>
+                    <a href="#packages">الباقات</a>
+                    <a href="#report-sample">نموذج التقرير</a>
+                    <a href="#founder">من نحن</a>
+                    <a href="#reviews">تقييمات وآراء المربين</a>
+                    <a href="#booking">احجز استشارتك</a>
+                    <a href="#faq">الأسئلة الشائعة</a>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 جميع الحقوق محفوظة لـ <strong>Rainbow Wings - قتيبة الدبعي</strong>.</p>
+                <p>مصمم خصيصاً لخدمة مربي طيور الزينة والهواة 🦜</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- =========================================================================
+         أكواد JavaScript النقية (Vanilla JS) للتفاعل وربط الواتساب
+         ========================================================================= -->
+    <script src="main.js"></script>
+</body>
+
+</html>
